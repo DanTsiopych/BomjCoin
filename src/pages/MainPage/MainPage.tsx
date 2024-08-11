@@ -9,7 +9,6 @@ import { DissappearedElement } from '../../UI/DissappearedElement/DissappearedEl
 import { AnimatedCoin } from '../../UI/AnimatedCoin/AnimatedCoin'
 import { useActionContext } from '../../hooks/useActionContext'
 
-import BackGround from '../../assets/dustbin.jpeg'
 import MainCoin from '../../assets/icons/main-coin.svg'
 
 function MainPage() {
@@ -18,12 +17,11 @@ function MainPage() {
   const [coordinates, setCoordinates] = useState({ coordinateX: 0, coordinateY: 0 });
   const [animationDisplayState, setAnimationDisplayState] = useState(false);
 
-  const contextValue =  useActionContext()
+  const contextValue = useActionContext()
 
 
   return (
     <div className='main-page'>
-      <img src={BackGround} className='backgroung-img' alt='backgroung-img' />
       <DissappearedElement
         coordinates={coordinates}
         animationDisplayState={animationDisplayState}
