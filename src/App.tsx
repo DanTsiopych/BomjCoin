@@ -13,9 +13,9 @@ import BoostsPage from "./pages/BoostsPage/BoostsPage";
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<MainPage />} />
-    <Route path='secret' element={<BonusPage />} />
-    <Route path='achieves' element={<AchievesPage />} />
-    <Route path='boosts' element={<BoostsPage />} />
+    <Route path='/secret' element={<BonusPage />} />
+    <Route path='/achieves' element={<AchievesPage />} />
+    <Route path='/boosts' element={<BoostsPage />} />
   </Route>
 ))
 
