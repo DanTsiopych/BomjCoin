@@ -1,0 +1,31 @@
+@use "./vars.scss" as *;
+
+@mixin flex($horizontal, $vertical) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw / #{$max-width})));
+}
+
+@mixin basic-background($backgroundColor) {
+    width: 400px;
+    height: 610px;
+    @include flex(flex-start, center);
+    flex-direction: column;
+    z-index: 10;
+    border-radius: 10px;
+    box-shadow: 0 13px 81px 30px #6f737f;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    box-sizing: border-box;
+    background-color: $backgroundColor;
+    position: relative;
+    @media (max-height: 610px) {
+        min-height: 100%;
+    }
+}

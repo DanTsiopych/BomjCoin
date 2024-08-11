@@ -1,0 +1,30 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+@use "../../styles/simpifiers/vars.scss" as *;
+
+.achievesPage {
+    @include basic-background($basicBackgroundColor);
+}
+
+.achieves-content {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: $lighterElementBackColor;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.achieves-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5px 0px 20px 0px;
+}
+
+.achieves {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}

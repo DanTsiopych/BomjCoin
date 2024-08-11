@@ -1,0 +1,37 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+@use "../../styles/simpifiers/vars.scss" as *;
+
+.achieve {
+    @include flex(space-between, center);
+    width: 100%;
+    background-color: $basicElementBackColor;
+    border-radius: 10px;
+    padding: 12px 10px;
+
+    &.done {
+        opacity: 0.2;
+    }
+}
+
+.achieve-description {
+    font-size: 20px;
+}
+
+.achieve-reward {
+    margin: 6px 0px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.progress {
+    font-size: 12px;
+}
+
+.achieve-prize {
+    @include flex(center, center);
+    flex-direction: column;
+}
+
+.achieve-prize-img {
+    margin-bottom: 5px;
+}

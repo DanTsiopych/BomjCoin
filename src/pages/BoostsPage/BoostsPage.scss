@@ -1,0 +1,34 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+@use "../../styles/simpifiers/vars.scss" as *;
+
+.boostsPage {
+    @include basic-background($basicBackgroundColor);
+    overflow-y: scroll;
+}
+
+.boosts-content {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: $lighterElementBackColor;
+    margin: 25px 0px 40px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.boosts-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 5px 0px 20px 0px;
+}
+
+.boosts {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    
+}
+

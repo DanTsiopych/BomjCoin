@@ -1,0 +1,15 @@
+@use "./styles/basic/reset.scss";
+@use "./styles/fonts/fonts.scss";
+
+@use "./layout/Layout.scss";
+
+@use "./UI/BackButton/BackButton.scss";
+
+@use "./pages/MainPage/MainPage.scss";
+@use "./pages/BonusPage/BonusPage.scss";
+@use "./pages/AchievesPage/AchievesPage.scss";
+@use "./pages/BoostsPage/BoostsPage.scss";
+
+@use "./components/Navigation/Navigation.scss";
+@use "./components/Achieve/Achieve.scss";
+@use "./components/Boost/Boost.scss";

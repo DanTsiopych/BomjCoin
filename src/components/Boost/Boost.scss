@@ -1,0 +1,28 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+@use "../../styles/simpifiers/vars.scss" as *;
+
+.boost {
+    @include flex(space-between, center);
+    width: 100%;
+    background-color: $basicElementBackColor;
+    border-radius: 10px;
+    padding: 12px 10px;
+
+    &.done {
+        opacity: 0.2;
+    }
+}
+
+.boost-title {
+    font-size: 20px;
+}
+
+.boost-price {
+    margin: 6px 0px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.boost-description {
+    font-size: 12px;
+}

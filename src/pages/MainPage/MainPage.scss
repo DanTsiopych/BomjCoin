@@ -1,0 +1,67 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+@use "../../styles/simpifiers/vars.scss" as *;
+
+
+.main-page {
+    @include basic-background(black);
+
+}
+
+.backgroung-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    & img {
+        max-width: 100%;
+    }
+}
+
+.main-title {
+    align-self: flex-start;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.coins {
+    @include flex(center, center);
+    margin-bottom: 30px;
+
+    & .little-coin-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    & .number-of-coins {
+        font-size: 42px;
+    }
+}
+
+.main-content {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 100%;
+}
+
+.huge-coin-image.animated {
+    transform: scale(1.04);
+    position: relative;
+}
+
+.disappearedElement {
+    font-size: 26px;
+}
+
+.main-footer {
+    text-align: center;
+    margin: 35px 0px 10px 0px;
+    & .telegram-link {
+        color: red;
+    }
+}

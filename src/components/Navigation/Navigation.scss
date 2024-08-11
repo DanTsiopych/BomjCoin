@@ -1,0 +1,23 @@
+@use "../../styles/simpifiers/mixins.scss" as *;
+
+.navigation {
+    @include flex(flex-end, center);
+    width: 100%;
+    margin: 40px 0px 10px 0px;
+    border-radius: 10px;
+    gap: 40px;
+    padding: 10px 20px;
+    background-color: #6f737f99;
+
+    & .nav-item {
+        @include flex(center, center);
+        flex-direction: column;
+
+        & .nav-img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 2px;
+            user-select: none;
+        }
+    }
+}
